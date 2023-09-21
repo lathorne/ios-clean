@@ -1,6 +1,8 @@
 # ios-clean
 Clean, simple, distraction-free icons for iOS homepage customization. See {{website}} to download icons. The icons, app, and code are all free, just [give me a follow](https://x.com/loganthorneloe).
 
+Shortcuts can be found here: https://www.icloud.com/iclouddrive/060EUWMxOPbapqUpB2O3j-JOQ#iOS-Clean 
+
 # How it works
 
 # How to set up icons w/shortcuts
