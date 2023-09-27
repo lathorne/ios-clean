@@ -9,6 +9,76 @@ from PIL import Image
 import cairosvg
 
 hex = "#000000"
+'''
+dock color changes for light or dark theme
+dock color changes based on dock transparency (Settings>Accessibility>Display&Text>Reduce Transparency)
+
+Apple darkens the background a bit when applied, thus the icons must be slightly darker than the applied background
+Apple lightens the background when in dark mode
+'''
+dict = {
+    'red': {
+        'background': 'ff3131',
+        'icons_wallpaper': 'f0302e',
+        'icons_dock_light': 'FF6464',
+        'icons_dock_dark': 'b41818',
+      },
+    'yellow': {
+        'background': 'ffdc33',
+        'icons_wallpaper': 'F1CF00',
+        'icons_dock_light': 'FFE82D',
+        'icons_dock_dark': 'bca423',
+      }, 
+    'orange': {
+        'background': 'ff914d',
+        'icons_wallpaper': 'F08B4A',
+        'icons_dock_light': 'FEB47A',
+        'icons_dock_dark': 'b5632f',
+      }, 
+    'blue': {
+        'background': '52d5fb',
+        'icons_wallpaper': '4dcaee',
+        'icons_dock_light': '79E8FF',
+        'icons_dock_dark': '3aa5c3',
+      }, 
+    'green': {
+        'background': '7ed957',
+        'icons_wallpaper': '7ACE51',
+        'icons_dock_light': 'A0EC7C',
+        'icons_dock_dark': '5A9D39',
+      }, 
+    'purple': {
+        'background': 'b08cfe',
+        'icons_wallpaper': 'A783F1',
+        'icons_wallpaper_dark': 'A783F1',
+        'icons_dock_light': 'CEAFFF',
+        'icons_dock_dark': '775BB3',
+      }, 
+    'grey': {
+        'background': 'a6a6a6',
+        'icons_wallpaper': '9E9E9E',
+        'icons_dock_light': 'C5C5C5',
+        'icons_dock_dark': '737373',
+      }, 
+    'black': {
+        'background': '000000',
+        'icons_wallpaper': '000000',
+        'icons_dock_light': '3a3a3a',
+        'icons_dock_dark': '232524',
+      }, 
+    'white': {
+        'background': 'ffffff',
+        'icons_wallpaper': 'F2F2F2',
+        'icons_dock_light': 'F3F3F3',
+        'icons_dock_dark': 'c6c6c6',
+      }, 
+    'pink': {
+        'background': 'ff66c4',
+        'icons_wallpaper': 'F160B9',
+        'icons_dock_light': 'FF91E0',
+        'icons_dock_dark': 'B23E86',
+      },  
+    }
 
 def create_icon(hex, img_name, dock_icons=None):
   if dock_icons is None:
@@ -35,39 +105,6 @@ def create_icon(hex, img_name, dock_icons=None):
   # Save the final image
   blank.save("final_image.png")
 
-# given the background hex color determine the color of the icons and dock icons
-
-'''
-dock color changes for light or dark theme
-dock color changes based on dock transparency (Settings>Accessibility>Display&Text>Reduce Transparency)
-
-Apple darkens the background a bit when applied, thus the icons must be slightly darker than the applied background
-
-red
-background ff3131 (255, 49, 49)
-icons f0302e (240, 48, 46)
-dock b41818 (180, 24, 24)
-
-yellow
-background ffdc33 (255, 220, 51)
-icons f0d02f (240, 208, 47)
-dock bca423 (188, 164, 35)
-
-black
-background 000000 (0, 0, 0)
-icons 000000 (0, 0, 0)
-dock 232524 (35, 37, 36)
-
-blue
-background 52d5fb (82, 213, 251)
-icons 4dcaee (77, 202, 238)
-dock 3aa5c3 (58, 165, 195)
-
-white
-background ffffff (255, 255, 255)
-icons f2f2f2 (242, 242, 242)
-dock c6c6c6 (198, 198, 198)
-'''
 
 def determine_hex_colors(hex):
   pass
