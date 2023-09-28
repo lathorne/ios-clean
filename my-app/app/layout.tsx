@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Clean iOS Icons',
+  title: 'Clean iOS Icons - builtbylogan',
   description: 'Minimalistic icons to customize your iPhone home screen.',
 }
 
