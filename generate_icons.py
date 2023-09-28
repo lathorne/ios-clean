@@ -160,10 +160,10 @@ def iterate_over_svgs_and_create_icons(color, save_path, svgs_dir, pngs_dir):
 # this needs to be called once for wallpaper icons and once for dock icons (based on theme)
 def create_icons(color, save_path):
 
-  dir = "./svgs/"
-  black_dir = "./black_svgs/"
-  pngs_dir = "./pngs/"
-  black_pngs_dir = "./black_pngs/"
+  dir = "./imgs/svgs/"
+  black_dir = "./imgs/black_svgs/"
+  pngs_dir = "./imgs/pngs/"
+  black_pngs_dir = "./imgs/black_pngs/"
 
   if color == '#F2F2F2' or color == '#F3F3F3' or color == '#c6c6c6':
     # icons with black svgs
