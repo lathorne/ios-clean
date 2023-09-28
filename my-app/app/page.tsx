@@ -73,7 +73,7 @@ export default function Home() {
 
     document.body.removeChild(a);
     window.URL.revokeObjectURL(download_files[iconColor]);
-}
+  };
 
   return (
     <main className="flex flex-col min-h-screen items-center">
@@ -81,7 +81,7 @@ export default function Home() {
         <NavigationMenu>
           <NavigationMenuList>
           <NavigationMenuItem>
-              <Link href="https://github.com/lathorne/ios-clean" legacyBehavior passHref>
+              <Link href="/icons" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   See the Icons
                 </NavigationMenuLink>
@@ -90,7 +90,7 @@ export default function Home() {
             <NavigationMenuItem>
               <Link href="https://github.com/lathorne/ios-clean" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Documentation
+                  Info
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -129,7 +129,7 @@ export default function Home() {
             <Button variant="outline" onClick={() => downloadFile()} className={handleButtonColor()}>Download</Button>
           </div>
           <div className="flex flex-col items-center pt-4 text-sm text-muted-foreground">
-            <p className="underline"><a href="https://github.com/lathorne/ios-clean">How to install</a></p>
+            <p className="underline"><a href="https://github.com/lathorne/ios-clean#how-it-works">How to install</a></p>
           </div>
         </div>
       </div>
