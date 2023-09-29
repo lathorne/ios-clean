@@ -195,17 +195,8 @@ def generate_icons(color):
   create_icons(dark_dock_icons_color, save_path + "/dark_dock_icons/")
 
 def generate_all_color_icons():
-  generate_icons('blue')
-  generate_icons('purple')
-  generate_icons('yellow')
-  generate_icons('orange')
-  generate_icons('red')
-  generate_icons('green')
-  generate_icons('pink')
-  generate_icons('grey')
-  generate_icons('black')
-  generate_icons('white')
-  print('all icons created')
+  for key, _ in dict.items():
+    generate_icons(key)
 
 def main():
 
@@ -216,16 +207,7 @@ def main():
   colors = args.colors.split(',')
 
   if "all" in colors:
-    generate_icons('blue')
-    generate_icons('purple')
-    generate_icons('yellow')
-    generate_icons('orange')
-    generate_icons('red')
-    generate_icons('green')
-    generate_icons('pink')
-    generate_icons('grey')
-    generate_icons('black')
-    generate_icons('white')
+    generate_all_color_icons()
   else:
     for color in colors:
       if color in valid_colors:
