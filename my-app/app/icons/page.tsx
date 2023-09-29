@@ -83,7 +83,6 @@ export default function Icons() {
         White icons have black logos. Icons sourced from <a href="https://icons8.com/icons" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">Icons8</a> and <a href="https://fontawesome.com/search" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">FontAwesome</a>.
         </p>
       </div>
-      <Footer/>
     </main>
   )
 }

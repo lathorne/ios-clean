@@ -28,9 +28,16 @@ export default function Nav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
+            <Link href="/install" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Install
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
             <Link href="https://github.com/lathorne/ios-clean" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Info
+                Source
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
