@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import Link from "next/link"
 import Footer from "../footer"
+import Nav from "../nav"
 
 interface ImageDictionary {
   [key: string]: string;
@@ -29,25 +30,8 @@ export default function Icons() {
 
   return (
     <main className="flex flex-col min-h-screen items-center">
-      <div className="pt-5">
-        <NavigationMenu>
-          <NavigationMenuList>
-          <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Home
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="https://github.com/lathorne/ios-clean" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Info
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+      <div>
+        <Nav/>
       </div>
       <div className="grid grid-cols-4 md:grid-cols-8 gap-4 px-10 pt-6">
         <img className="h-auto max-w-full rounded-lg" src="icons/airbnb.png" alt=""/>

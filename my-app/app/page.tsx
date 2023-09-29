@@ -20,7 +20,8 @@ import {
 import { Button } from "@/components/ui/button"
 
 import React from 'react';
-import Footer from "./footer"
+import Footer from "./footer";
+import Nav from "./nav";
 
 let download_files: { [key: string]: any } = {
   'black': '/zips/black.zip',
@@ -76,25 +77,8 @@ export default function Home() {
       <a className="bg-green"></a>
       <a className="bg-grey"></a>
       <a className="bg-pink"></a>
-      <div className="pt-5">
-        <NavigationMenu>
-          <NavigationMenuList>
-          <NavigationMenuItem>
-              <Link href="/icons" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Example Icons
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="https://github.com/lathorne/ios-clean" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Info
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+      <div>
+        <Nav/>
       </div>
       <div className="flex flex-col items-center justify-between">
         <div className="text-center pt-32 pb-20 px-2">
