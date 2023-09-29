@@ -115,7 +115,7 @@ export default function Home() {
             <Button variant="outline" onClick={() => downloadFile()} className={handleButtonColor()}>Download</Button>
           </div>
           <div className="flex flex-col items-center pt-4 text-sm text-muted-foreground">
-            <p className="underline"><a href="https://github.com/lathorne/ios-clean#how-it-works">How to install</a></p>
+            <p className="underline"><a href="/install">How to install</a></p>
           </div>
         </div>
       </div>
