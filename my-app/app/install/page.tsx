@@ -15,7 +15,7 @@ export default function Install() {
   return (
     <main className="flex flex-col min-h-screen items-center">
       <Nav/>
-      <div className="p-10">
+      <div className="p-10 md:px-80">
         <h1 className="text-4xl font-bold tracking-tight text-center">Icon Installation</h1>
         <h1 className="text-2xl font-bold tracking-tight py-5">How it works</h1>
         <p className="tracking-tight py-3">iPhones don&apos;t support easily theming home screens like Android; however,using a mixture of pictures and shortcuts, users can still create a custom iOS home screen.</p>
