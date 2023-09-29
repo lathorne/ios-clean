@@ -19,7 +19,8 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 
-import React, { useState, ChangeEvent } from 'react';
+import React from 'react';
+import Footer from "./footer"
 
 let icloud_links: { [key: string]: any } = {
   'black': 'https://www.icloud.com/iclouddrive/0baEhyCzNhjgq28Zbvz7wEb1w#black',
@@ -83,7 +84,7 @@ export default function Home() {
           <NavigationMenuItem>
               <Link href="/icons" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  See the Icons
+                  See Icons
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -99,7 +100,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center justify-between">
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight pt-32 px-2">Create a productive, distraction-free home screen.</h1>
+          <h1 className="text-4xl font-bold tracking-tight pt-32 px-2">Create a productive, distraction-free home screen</h1>
           <h1 className="text-2xl tracking-tight pb-20">Download minimalistic icons for your iPhone for free.</h1>
         </div>
         <div className="justify-center">
@@ -133,11 +134,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="container flex flex-col text-center fixed bottom-0 items-center content-center justify-center gap-4 md:h-24">
-        <p className="text-sm text-muted-foreground">
-          Built by <a href="https://x.com/loganthorneloe" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">loganthorneloe</a>. The source code is available on <a href="https://github.com/lathorne/ios-clean" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">GitHub</a>. Icons sources from <a href="https://icons8.com/icons" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">Icons8</a> and <a href="https://fontawesome.com/search" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">FontAwesome</a>.
-        </p>
-      </footer>
+      <Footer/>
     </main>
   )
 }

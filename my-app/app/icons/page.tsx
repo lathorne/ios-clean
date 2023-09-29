@@ -9,6 +9,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import Link from "next/link"
+import Footer from "../footer"
 
 interface ImageDictionary {
   [key: string]: string;
@@ -49,9 +50,9 @@ export default function Icons() {
         </NavigationMenu>
       </div>
       <div>
-        <h1 className="text-l tracking-tight text-muted-foreground py-6">Icons with a white background will have black logos.</h1>
+        <h1 className="text-l tracking-tight text-muted-foreground py-6">White icons have black logos.</h1>
       </div>
-      <div className="grid grid-cols-4 md:grid-cols-8 gap-4 px-20">
+      <div className="grid grid-cols-4 md:grid-cols-8 gap-4 px-10">
         <img className="h-auto max-w-full rounded-lg" src="icons/airbnb.png" alt=""/>
         <img className="h-auto max-w-full rounded-lg" src="icons/apple-fitness.png" alt=""/>
         <img className="h-auto max-w-full rounded-lg" src="icons/apple-photos.png" alt=""/>
@@ -96,11 +97,7 @@ export default function Icons() {
       <div>
         <h1 className="text-l tracking-tight text-muted-foreground py-6">See the list of all 86 icons <a className="underline" href="https://github.com/lathorne/ios-clean">here</a>.</h1>
       </div>
-      <footer className="container flex flex-col text-center fixed bottom-0 items-center content-center justify-center gap-4 md:h-24">
-        <p className="text-sm text-muted-foreground">
-          Built by <a href="https://x.com/loganthorneloe" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">loganthorneloe</a>. The source code is available on <a href="https://github.com/lathorne/ios-clean" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">GitHub</a>. Icons sources from <a href="https://icons8.com/icons" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">Icons8</a> and <a href="https://fontawesome.com/search" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">FontAwesome</a>.
-        </p>
-      </footer>
+      <Footer/>
     </main>
   )
 }
