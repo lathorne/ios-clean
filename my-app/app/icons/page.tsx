@@ -49,7 +49,7 @@ export default function Icons() {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      <div className="grid grid-cols-4 md:grid-cols-8 gap-4 px-10">
+      <div className="grid grid-cols-4 md:grid-cols-8 gap-4 px-10 pt-6">
         <img className="h-auto max-w-full rounded-lg" src="icons/airbnb.png" alt=""/>
         <img className="h-auto max-w-full rounded-lg" src="icons/apple-fitness.png" alt=""/>
         <img className="h-auto max-w-full rounded-lg" src="icons/apple-photos.png" alt=""/>
@@ -91,8 +91,13 @@ export default function Icons() {
         <img className="h-auto max-w-full rounded-lg" src="icons/linkedin.png" alt=""/>
         <img className="h-auto max-w-full rounded-lg" src="icons/files.png" alt=""/>
       </div>
-      <div className="px-10">
-        <h1 className="text-l tracking-tight text-muted-foreground py-6">White icons have black logos. See the list of all 86 icons <a className="underline" href="https://github.com/lathorne/ios-clean">here</a>.</h1>
+      <div className="px-10 text-center">
+        <h1 className="text-l tracking-tight text-muted-foreground py-6">
+          <strong>See the list of all 86 icons <a className="underline" href="https://github.com/lathorne/ios-clean">here</a></strong>.
+        </h1>
+        <p className="text-l tracking-tight text-muted-foreground py-6">
+        White icons have black logos. Icons sourced from <a href="https://icons8.com/icons" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">Icons8</a> and <a href="https://fontawesome.com/search" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">FontAwesome</a>.
+        </p>
       </div>
       <Footer/>
     </main>

@@ -82,7 +82,7 @@ export default function Home() {
           <NavigationMenuItem>
               <Link href="/icons" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  See Icons
+                  Example Icons
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -100,6 +100,9 @@ export default function Home() {
         <div className="text-center pt-32 pb-20 px-2">
           <h1 className="text-4xl font-bold tracking-tight">Create a productive, distraction-free home screen</h1>
           <h1 className="text-2xl tracking-tight">Download minimalistic icons for your iPhone for free.</h1>
+          <p className="text-sm text-muted-foreground pt-2">
+            Built by <a href="https://x.com/loganthorneloe" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">loganthorneloe</a>.
+          </p>
         </div>
         <div className="justify-center">
           <form>
