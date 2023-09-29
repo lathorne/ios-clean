@@ -35,7 +35,7 @@ export default function Install() {
         <p className="tracking-tight py-3">2. Add the shortcut to your home screen.</p>
         <p className="tracking-tight py-3">Tap the three dots in the top right of the shortcut. Press the arrow next to the shortcut name and choose &apos;Add to Home Screen&apos;. Press the icon next to the name of the shortcut and select &apos;Choose File&apos;. Navigate to the folder you extracted.</p>
         <p className="tracking-tight py-3">You&apos;ll find the picture for your icon in one of three folders:</p>
-        <ul className="list-disc">
+        <ul>
           <li>
             <strong>wallpaper_icons</strong>: If this app is going to be placed on your home screen but not on the dock.
           </li>
