@@ -3,11 +3,11 @@ A way to more easily customize a distraction-free, minimalistic iOS home screen 
 
 Icons can be downloaded from https://icons.builtbylogan.com. Installation instructions can be found at https://icons.builtbylogan.com/install.
 
-# How this repo works
+## How this repo works
 
 This repo contains svgs for icons, a python script to generate icons, and a web interface using [React](https://react.dev/), [Next.js](https://nextjs.org/), and the [shadcn ui](https://ui.shadcn.com/). 
 
-# Adding new icons
+## Adding new icons
 
 Icons are added by adding an svg file with a transparent background of the icon to the [/imgs/svgs/](https://github.com/lathorne/ios-clean/tree/main/imgs/svgs) folder. A black version of the svg must also be added to the [/imgs/black_svgs/](https://github.com/lathorne/ios-clean/tree/main/imgs/black_svgs) folder. The [`generate_icons.py`](https://github.com/lathorne/ios-clean/blob/main/generate_icons.py) can then be run to create corresponding white and black pngs and icons and overlay them onto the available color options.
 
@@ -17,7 +17,7 @@ A shortcut must created for the icon as well. This can be done via the Shortcuts
 
 The color folders then need to be compressed and added to the [/my-app/public/zips/](https://github.com/lathorne/ios-clean/tree/main/my-app/public/zips) folder and pushed to the server.
 
-# Adding new colors
+## Adding new colors
 
 To add a new color, one must choose a background color. Apply that as the background on an iPhone, take a screenshot, transfer back to a computer, and color pick it. This is because Apple slightly alters the hex code of the background color. The dock color must also be color picked and this needs to be done for both light and dark themes. This means a screenshot of the home screen with the desired background must be taken and transferred to a computer twice (once for dark and once for light theme).
 
