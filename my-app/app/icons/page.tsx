@@ -67,7 +67,7 @@ export default function Icons() {
       </div>
       <div className="px-10 text-center">
         <h1 className="text-l tracking-tight text-muted-foreground py-6">
-          <strong>See the list of all 86 icons <a className="underline" href="https://github.com/lathorne/ios-clean">here</a></strong>.
+          <strong>See the list of all 86 icons <a className="underline" href="https://github.com/lathorne/ios-clean/tree/main/imgs/svgs">here</a></strong>.
         </h1>
         <p className="text-l tracking-tight text-muted-foreground py-6">
         White icons have black logos. Icons sourced from <a href="https://icons8.com/icons" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">Icons8</a> and <a href="https://fontawesome.com/search" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">FontAwesome</a>.
