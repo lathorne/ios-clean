@@ -99,9 +99,9 @@ export default function Home() {
         </NavigationMenu>
       </div>
       <div className="flex flex-col items-center justify-between">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight pt-32 px-2">Create a productive, distraction-free home screen</h1>
-          <h1 className="text-2xl tracking-tight pb-20 px-2">Download minimalistic icons for your iPhone for free.</h1>
+        <div className="text-center pt-32 pb-20 px-2">
+          <h1 className="text-4xl font-bold tracking-tight">Create a productive, distraction-free home screen</h1>
+          <h1 className="text-2xl tracking-tight">Download minimalistic icons for your iPhone for free.</h1>
         </div>
         <div className="justify-center">
           <form>
