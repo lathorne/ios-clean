@@ -49,9 +49,6 @@ export default function Icons() {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      <div>
-        <h1 className="text-l tracking-tight text-muted-foreground py-6">White icons have black logos.</h1>
-      </div>
       <div className="grid grid-cols-4 md:grid-cols-8 gap-4 px-10">
         <img className="h-auto max-w-full rounded-lg" src="icons/airbnb.png" alt=""/>
         <img className="h-auto max-w-full rounded-lg" src="icons/apple-fitness.png" alt=""/>
@@ -94,8 +91,8 @@ export default function Icons() {
         <img className="h-auto max-w-full rounded-lg" src="icons/linkedin.png" alt=""/>
         <img className="h-auto max-w-full rounded-lg" src="icons/files.png" alt=""/>
       </div>
-      <div>
-        <h1 className="text-l tracking-tight text-muted-foreground py-6">See the list of all 86 icons <a className="underline" href="https://github.com/lathorne/ios-clean">here</a>.</h1>
+      <div className="px-10">
+        <h1 className="text-l tracking-tight text-muted-foreground py-6">White icons have black logos. See the list of all 86 icons <a className="underline" href="https://github.com/lathorne/ios-clean">here</a>.</h1>
       </div>
       <Footer/>
     </main>
