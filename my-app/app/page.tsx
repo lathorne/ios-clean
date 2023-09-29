@@ -22,19 +22,6 @@ import { Button } from "@/components/ui/button"
 import React from 'react';
 import Footer from "./footer"
 
-let icloud_links: { [key: string]: any } = {
-  'black': 'https://www.icloud.com/iclouddrive/0baEhyCzNhjgq28Zbvz7wEb1w#black',
-  'blue': 'https://www.icloud.com/iclouddrive/042_kKQxXvuwPh-LOdACP2Mew#blue',
-  'green': 'https://www.icloud.com/iclouddrive/0b7Ji-T0HN-ZU86dYMmYkK_0Q#green',
-  'grey': 'https://www.icloud.com/iclouddrive/03cJ9RbhN_55X1rY6wpU0zwHA#grey',
-  'orange': 'https://www.icloud.com/iclouddrive/01d2eAOjJwMFQu9ecqxwZbyDQ#orange',
-  'pink': 'https://www.icloud.com/iclouddrive/023o5T1oykxzYmCg63FeM-oFQ#pink',
-  'purple': 'https://www.icloud.com/iclouddrive/0ddp6fqQpZRuX7zKNCIa0i02w#purple',
-  'red': 'https://www.icloud.com/iclouddrive/093jdGHNb1e3ELWDcB0uqk0Yg#red',
-  'white': 'https://www.icloud.com/iclouddrive/012seIYj53FDD2k1ErG2wpjog#white',
-  'yellow': 'https://www.icloud.com/iclouddrive/01aYNNSuaONzde1eWu11j5zUA#yellow',
-}
-
 let download_files: { [key: string]: any } = {
   'black': '/zips/black.zip',
   'blue': '/zips/blue.zip',
@@ -57,10 +44,10 @@ export default function Home() {
   };
 
   const handleButtonColor = (): string => {
-    if (iconColor === "white") {
-      return "bg-icons-" + iconColor + " text-black";
+    if (iconColor === "white" || iconColor === "yellow") {
+      return "bg-" + iconColor + " text-black";
     }
-    return "bg-icons-" + iconColor;
+    return "bg-" + iconColor;
   };
 
   function downloadFile() {
@@ -78,6 +65,17 @@ export default function Home() {
 
   return (
     <main className="flex flex-col min-h-screen items-center">
+      {/* janky way to fix bg class issue. */}
+      <a className="bg-black"></a>
+      <a className="bg-white"></a>
+      <a className="bg-orange"></a>
+      <a className="bg-red"></a>
+      <a className="bg-yellow"></a>
+      <a className="bg-purple"></a>
+      <a className="bg-blue"></a>
+      <a className="bg-green"></a>
+      <a className="bg-grey"></a>
+      <a className="bg-pink"></a>
       <div className="pt-5">
         <NavigationMenu>
           <NavigationMenuList>
