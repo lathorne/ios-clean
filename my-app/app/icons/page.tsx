@@ -70,7 +70,7 @@ export default function Icons() {
           <strong>See the list of all 86 icons <a className="underline" target="_blank" rel="noreferrer" href="https://github.com/lathorne/ios-clean/tree/main/imgs/svgs">here</a></strong>.
         </h1>
         <p className="text-l tracking-tight text-muted-foreground py-6">
-        White icons have black logos. Icons sourced from <a href="https://icons8.com/icons" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">Icons8</a> and <a href="https://fontawesome.com/search" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">FontAwesome</a>.
+        A white background has black icons. Icons sourced from <a href="https://icons8.com/icons" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">Icons8</a> and <a href="https://fontawesome.com/search" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">FontAwesome</a>.
         </p>
       </div>
     </main>
