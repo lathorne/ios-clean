@@ -15,6 +15,6 @@ Example usage of generate_icons: `python generate_icons.py`
 
 A shortcut must created for the icon as well. This can be done via the Shortcuts app by creating a shortcut named the icon app name that opens the app whose icon will be replaced. This shortcut then needs to be downloaded and added to the [/shortcuts/](https://github.com/lathorne/ios-clean/tree/main/shortcuts) folder. This folder needs to be copied into the [`imgs/png-bbl`](https://github.com/lathorne/ios-clean/tree/main/imgs/pngs-bbl) folder.
 
-The `Icons Generator - builtbylogan` shortcut needs to be redownloaded and readded to the [`imgs/png-bbl`](https://github.com/lathorne/ios-clean/tree/main/imgs/pngs-bbl) folder whenever a change is made to it.
+The [`Icons Generator - builtbylogan`](https://github.com/lathorne/ios-clean/blob/main/imgs/pngs-bbl/Icons%20Generator%20-%20builtbylogan.shortcut) shortcut needs to be redownloaded and readded to the [`imgs/png-bbl`](https://github.com/lathorne/ios-clean/tree/main/imgs/pngs-bbl) folder whenever a change is made to it.
 
 The [`imgs/png-bbl`](https://github.com/lathorne/ios-clean/tree/main/imgs/pngs-bbl) folder needs to be compressed and added to the [`my-app/public/`](https://github.com/lathorne/ios-clean/tree/main/my-app/public) folder each time a change is made to its contents. This is what is served to the user when they press the Download button on the web app.
