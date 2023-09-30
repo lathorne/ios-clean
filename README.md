@@ -9,16 +9,12 @@ This repo contains svgs for icons, a python script to generate icons, and a web 
 
 ## Adding new icons
 
-Icons are added by adding an svg file with a transparent background of the icon to the [/imgs/svgs/](https://github.com/lathorne/ios-clean/tree/main/imgs/svgs) folder. A black version of the svg must also be added to the [/imgs/black_svgs/](https://github.com/lathorne/ios-clean/tree/main/imgs/black_svgs) folder. The [`generate_icons.py`](https://github.com/lathorne/ios-clean/blob/main/generate_icons.py) can then be run to create corresponding white and black pngs and icons and overlay them onto the available color options.
+Icons are added by adding an svg file with a transparent background of the icon to the [/imgs/svgs/](https://github.com/lathorne/ios-clean/tree/main/imgs/svgs) folder. A black version of the svg must also be added to the [/imgs/black_svgs/](https://github.com/lathorne/ios-clean/tree/main/imgs/black_svgs) folder. The [`generate_icons.py`](https://github.com/lathorne/ios-clean/blob/main/generate_icons.py) can then be run to create corresponding white and black pngs with transparent backgrounds.
 
-Example usage of generate_icons: `python generate_icons.py --colors=blue,purple` or `python generate_icons.py --colors=all`
+Example usage of generate_icons: `python generate_icons.py`
 
-A shortcut must created for the icon as well. This can be done via the Shortcuts app by creating a shortcut named the icon app name that opens the app whose icon will be replaced. This shortcut then needs to be downloaded and added to the [/shortcuts/](https://github.com/lathorne/ios-clean/tree/main/shortcuts) folder. This folder needs to be copied to each of the color folders created in the previous step so they are available in the zips downloaded by the user.
+A shortcut must created for the icon as well. This can be done via the Shortcuts app by creating a shortcut named the icon app name that opens the app whose icon will be replaced. This shortcut then needs to be downloaded and added to the [/shortcuts/](https://github.com/lathorne/ios-clean/tree/main/shortcuts) folder. This folder needs to be copied into the [`imgs/png-bbl`](https://github.com/lathorne/ios-clean/tree/main/imgs/pngs-bbl) folder.
 
-The color folders then need to be compressed and added to the [/my-app/public/zips/](https://github.com/lathorne/ios-clean/tree/main/my-app/public/zips) folder and pushed to the server.
+The `Icons Generator - builtbylogan` shortcut needs to be redownloaded and readded to the [`imgs/png-bbl`](https://github.com/lathorne/ios-clean/tree/main/imgs/pngs-bbl) folder whenever a change is made to it.
 
-## Adding new colors
-
-To add a new color, one must choose a background color. Apply that as the background on an iPhone, take a screenshot, transfer back to a computer, and color pick it. This is because Apple slightly alters the hex code of the background color. The dock color must also be color picked and this needs to be done for both light and dark themes. This means a screenshot of the home screen with the desired background must be taken and transferred to a computer twice (once for dark and once for light theme).
-
-Then the background, dark dock icons, light dock icons, and wallpaper icons hex codes need to be added to the dict in the python script.
+The [`imgs/png-bbl`](https://github.com/lathorne/ios-clean/tree/main/imgs/pngs-bbl) folder needs to be compressed and added to the [`my-app/public/`](https://github.com/lathorne/ios-clean/tree/main/my-app/public) folder each time a change is made to its contents. This is what is served to the user when they press the Download button on the web app.
