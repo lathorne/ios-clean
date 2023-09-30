@@ -1,82 +1,30 @@
 "use client"
 
-import Link from "next/link"
-
-import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 
 import React from 'react';
 import Footer from "./footer";
 import Nav from "./nav";
 
-let download_files: { [key: string]: any } = {
-  'black': '/zips/black.zip',
-  'blue': '/zips/blue.zip',
-  'green': '/zips/green.zip',
-  'grey': '/zips/grey.zip',
-  'orange': '/zips/orange.zip',
-  'pink': '/zips/pink.zip',
-  'purple': '/zips/purple.zip',
-  'red': '/zips/red.zip',
-  'white': '/zips/white.zip',
-  'yellow': '/zips/yellow.zip',
-}
-
 export default function Home() {
-
-  const [iconColor, setIconColor] = React.useState<string>("black");
-
-  const handleChange = (color: string): void => {
-    setIconColor(color);
-  };
-
-  const handleButtonColor = (): string => {
-    if (iconColor === "white" || iconColor === "yellow") {
-      return "bg-" + iconColor + " text-black";
-    }
-    return "bg-" + iconColor;
-  };
 
   function downloadFile() {
 
+    const download = 'icons.zip'
+
     const a = document.createElement("a");
-    a.href = download_files[iconColor];
-    a.download = iconColor + '.zip';
+    a.href = download;
+    a.download = download;
 
     document.body.appendChild(a);
     a.click();
 
     document.body.removeChild(a);
-    window.URL.revokeObjectURL(download_files[iconColor]);
+    window.URL.revokeObjectURL(download);
   };
 
   return (
     <main className="flex flex-col min-h-screen items-center">
-      {/* janky way to fix bg class issue. */}
-      <a className="bg-black"></a>
-      <a className="bg-white"></a>
-      <a className="bg-orange"></a>
-      <a className="bg-red"></a>
-      <a className="bg-yellow"></a>
-      <a className="bg-purple"></a>
-      <a className="bg-blue"></a>
-      <a className="bg-green"></a>
-      <a className="bg-grey"></a>
-      <a className="bg-pink"></a>
       <div>
         <Nav/>
       </div>
@@ -89,30 +37,8 @@ export default function Home() {
           </p>
         </div>
         <div className="justify-center">
-          <form>
-            <div className="flex flex-col space-y-1.5 gap-2">
-              <Label htmlFor="color">Select your icon color:</Label>
-              <Select onValueChange={handleChange} defaultValue="black">
-                <SelectTrigger id="color">
-                  <SelectValue defaultValue="black" placeholder="Black" />
-                </SelectTrigger>
-                <SelectContent position="popper">
-                  <SelectItem value="black">Black</SelectItem>
-                  <SelectItem value="white">White</SelectItem>
-                  <SelectItem value="orange">Orange</SelectItem>
-                  <SelectItem value="red">Red</SelectItem>
-                  <SelectItem value="yellow">Yellow</SelectItem>
-                  <SelectItem value="purple">Purple</SelectItem>
-                  <SelectItem value="blue">Blue</SelectItem>
-                  <SelectItem value="green">Green</SelectItem>
-                  <SelectItem value="grey">Grey</SelectItem>
-                  <SelectItem value="pink">Pink</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          </form>
           <div className="flex flex-col items-center pt-4">
-            <Button variant="outline" onClick={() => downloadFile()} className={handleButtonColor()}>Download</Button>
+            <Button variant="outline" onClick={() => downloadFile()}>Download</Button>
           </div>
           <div className="flex flex-col items-center pt-4 text-sm text-muted-foreground">
             <p className="underline"><a href="/install">How to install</a></p>
