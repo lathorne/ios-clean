@@ -10,7 +10,7 @@ export default function Home() {
 
   function downloadFile() {
 
-    const download = 'icons.zip'
+    const download = 'pngs-bbl.zip'
 
     const a = document.createElement("a");
     a.href = download;
