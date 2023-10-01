@@ -1,20 +1,8 @@
 "use client"
 
 import React from 'react';
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
-import Link from "next/link"
-import Footer from "../footer"
 import Nav from "../nav"
 
-interface imgDictionary {
-  [key: string]: string;
-}
 
 export default function Icons() {
 

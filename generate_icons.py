@@ -37,8 +37,8 @@ def create_pngs():
 
   dir = "./imgs/svgs/"
   black_dir = "./imgs/black_svgs/"
-  pngs_dir = "./imgs/pngs-bbl/white_pngs/"
-  black_pngs_dir = "./imgs/pngs-bbl/black_pngs/"
+  pngs_dir = "./imgs/iconsbylogan/white_pngs/"
+  black_pngs_dir = "./imgs/iconsbylogan/black_pngs/"
 
   # make sure write dirs exist
   create_dir_if_not_exist(dir)
@@ -54,7 +54,7 @@ def create_pngs():
 def main():
 
   create_dir_if_not_exist("./imgs/")
-  create_dir_if_not_exist("./imgs/pngs-bbl/")
+  create_dir_if_not_exist("./imgs/iconsbylogan/")
   create_pngs()
 
   print('icons created')

@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button"
 
 import React from 'react';
-import Footer from "./footer";
 import Nav from "./nav";
 
 export default function Home() {
