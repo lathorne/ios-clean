@@ -36,11 +36,12 @@ export default function Home() {
           </p>
         </div>
         <div className="justify-center">
-          <div className="flex flex-col items-center pt-4">
-            <Button variant="outline" onClick={() => downloadFile()}>Download</Button>
+          <div className="flex flex-col items-center pt-4 text-sm">
+            <p>If you haven't install custom iOS icons using shortcuts before,</p>
+            <p><a className="underline" href="/install"><strong>read the installation guide first</strong></a>.</p>
           </div>
-          <div className="flex flex-col items-center pt-4 text-sm text-muted-foreground">
-            <p className="underline"><a href="/install">How to install</a></p>
+          <div className="flex flex-col items-center pt-5">
+            <Button variant="outline" onClick={() => downloadFile()}>Download Icons</Button>
           </div>
         </div>
       </div>
