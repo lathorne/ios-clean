@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         <div className="justify-center">
           <div className="flex flex-col items-center pt-4 text-sm">
-            <p>If you haven&apos;t install custom iOS icons using shortcuts before,</p>
+            <p>If you haven&apos;t installed custom iOS icons using shortcuts before,</p>
             <p><a className="underline" href="/install"><strong>read the installation guide first</strong></a>.</p>
           </div>
           <div className="flex flex-col items-center pt-5">
