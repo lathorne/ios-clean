@@ -50,7 +50,7 @@ export default function Install() {
         <h1 className="text-2xl font-bold tracking-tight py-5">Set up each icon</h1>
         <p className="tracking-tight py-3">The following steps will need to be done for each icon you want to add to your home screen.</p>
         <p className="tracking-tight py-3">1. Grab the shortcut from the folder you extracted for the app you want to add to your home screen.</p>
-        <p className="tracking-tight py-3">Go to the &apos;pngs_shortcuts&apos; folder. Search for the app your're making a shortcut for. Tap the shortcut for the app you need and press &apos;Add Shortcut&apos;.</p>
+        <p className="tracking-tight py-3">Go to the &apos;pngs_shortcuts&apos; folder. Search for the app you&apos;re making a shortcut for. Tap the shortcut for the app you need and press &apos;Add Shortcut&apos;.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-5">
           <img className="h-auto max-w-full rounded-lg" src="icons_install_pics/8.png"/>
           <img className="h-auto max-w-full rounded-lg" src="icons_install_pics/9.png"/>
