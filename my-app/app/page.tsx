@@ -28,9 +28,9 @@ export default function Home() {
         <Nav/>
       </div>
       <div className="flex flex-col items-center justify-between">
-        <div className="text-center pt-32 pb-20 px-2">
+        <div className="items-center text-center pt-32 pb-20 px-2">
           <h1 className="text-4xl font-bold tracking-tight">Create a productive, distraction-free home screen</h1>
-          <h1 className="text-2xl tracking-tight">Download minimalistic icons for your iPhone for free.</h1>
+          <h1 className="text-2xl tracking-tight">Download <a href="/icons" className="underline">minimalistic icons</a> for your iPhone for free.</h1>
           <p className="text-sm text-muted-foreground pt-2">
             Built by <a href="https://x.com/loganthorneloe" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">loganthorneloe</a>.
           </p>

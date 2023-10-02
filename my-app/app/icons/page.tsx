@@ -12,7 +12,7 @@ export default function Icons() {
         <Nav/>
       </div>
       <div className="p-10 md:px-80">
-        <h1 className="text-4xl font-bold tracking-tight text-center">Example Icons</h1>
+        <h1 className="text-4xl font-bold tracking-tight text-center">Icons</h1>
         <div className="grid grid-cols-4 md:grid-cols-8 gap-4 pt-5">
           <img className="h-auto max-w-full rounded-lg" src="icons/airbnb.png" alt=""/>
           <img className="h-auto max-w-full rounded-lg" src="icons/apple-fitness.png" alt=""/>
