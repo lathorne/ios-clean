@@ -3,8 +3,24 @@
 import React from 'react';
 import Nav from "../nav"
 
+import { Button } from "@/components/ui/button"
 
 export default function Icons() {
+
+  function downloadFile() {
+
+    const download = 'iconsbylogan.zip'
+
+    const a = document.createElement("a");
+    a.href = download;
+    a.download = download;
+
+    document.body.appendChild(a);
+    a.click();
+
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(download);
+  };
 
   return (
     <main className="flex flex-col min-h-screen items-center">
@@ -97,6 +113,9 @@ export default function Icons() {
           <img className="h-auto max-w-full rounded-lg" src="icons/whatsapp.png" alt=""/>
           <img className="h-auto max-w-full rounded-lg" src="icons/x.png" alt=""/>
           <img className="h-auto max-w-full rounded-lg" src="icons/youtube.png" alt=""/>
+        </div>
+        <div className="flex flex-col items-center pt-5">
+          <Button variant="outline" onClick={() => downloadFile()}>Download Icons</Button>
         </div>
         <div className="px-10 text-center">
           <h1 className="text-l tracking-tight text-muted-foreground py-6">
