@@ -100,7 +100,7 @@ export default function Icons() {
         </div>
         <div className="px-10 text-center">
           <h1 className="text-l tracking-tight text-muted-foreground py-6">
-            See the list of 86 icons <a className="underline" target="_blank" rel="noreferrer" href="https://github.com/lathorne/ios-clean/tree/main/imgs/svgs">here</a>. You can add your own icons by adding a black or white png with a transparent background of the icon you want to use to the folder with the rest of the icons. More detailed info <a href="https://github.com/lathorne/ios-clean#adding-new-icons">here</a>.
+            See the list of 86 icons <a className="underline" target="_blank" rel="noreferrer" href="https://github.com/lathorne/ios-clean/tree/main/imgs/svgs">here</a>. You can add your own icons by adding a black or white png with a transparent background of the icon you want to use to the folder with the rest of the icons. More detailed info <a className="underline" href="https://github.com/lathorne/ios-clean#adding-new-icons">here</a>.
           </h1>
           <p className="text-l tracking-tight text-muted-foreground py-6">
           Icons come in both white and black. Icons sourced from <a href="https://icons8.com/icons" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">Icons8</a> and <a href="https://fontawesome.com/search" target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">FontAwesome</a>.
