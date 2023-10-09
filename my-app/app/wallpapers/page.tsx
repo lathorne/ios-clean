@@ -31,20 +31,30 @@ export default function Icons() {
         <h1 className="text-4xl font-bold tracking-tight text-center">Wallpapers</h1>
         <div className="px-10 text-center">
           <h1 className="text-l tracking-tight text-muted-foreground py-6">
-            These are wallpapers that work well with the icons generator. Some may require using empty widget to push icons down.
+            These are wallpapers that work well with the icons generator. Some may require using empty widgets to push icons down.
           </h1>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-5">
           <div>
             <p className="text-l tracking-tight text-muted-foreground text-center py-6">Ocean</p>
             <img className="h-auto max-w-full rounded-lg" src="wallpapers/beach.png" alt=""/>
+            <p className="text-l tracking-tight text-muted-foreground text-center py-2">Inspired by beaches along the Atlantic Ocean.</p>
             <div className="flex flex-col items-center pt-5">
               <Button variant="outline" onClick={() => downloadWallpaper("beach.png")}>Download</Button>
             </div>
           </div>
           <div>
+            <p className="text-l tracking-tight text-muted-foreground text-center py-6">Hills</p>
+            <img className="h-auto max-w-full rounded-lg" src="wallpapers/hills.png" alt=""/>
+            <p className="text-l tracking-tight text-muted-foreground text-center py-2">Inspired by the hills of Southern California.</p>
+            <div className="flex flex-col items-center pt-5">
+              <Button variant="outline" onClick={() => downloadWallpaper("hills.png")}>Download</Button>
+            </div>
+          </div>
+          <div>
             <p className="text-l tracking-tight text-muted-foreground text-center py-6">Black</p>
             <img className="h-auto max-w-full rounded-lg" src="wallpapers/black.png" alt=""/>
+            <p className="text-l tracking-tight text-muted-foreground text-center py-2">Inspired by minimalist design and the color black.</p>
             <div className="flex flex-col items-center pt-5">
               <Button variant="outline" onClick={() => downloadWallpaper("black.png")}>Download</Button>
             </div>
