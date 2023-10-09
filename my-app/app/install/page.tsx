@@ -8,7 +8,7 @@ export default function Install() {
     <main className="flex flex-col min-h-screen items-center">
       <Nav/>
       <div className="p-10 lg:px-80">
-        <h1 className="text-4xl font-bold tracking-tight text-center">Icon Installation</h1>
+        <h1 className="text-4xl font-bold tracking-tight text-center">Installation</h1>
         <h1 className="text-2xl font-bold tracking-tight py-5">Setup</h1>
         <p className="tracking-tight py-3">Make sure both the Shortcuts and Files apps are downloaded on your iPhone. Go to Settings &gt; Shortcuts &gt; Advanced on your iPhone and turn on &apos;Allow Sharing Large Amounts of Data&apos;.</p>
 
@@ -29,7 +29,7 @@ export default function Install() {
         </div>
 
         <h1 className="text-2xl font-bold tracking-tight py-5">Set your background</h1>
-        <p className="tracking-tight py-3">Choose a solid color background you want to use. This can be done via the Wallpaper settings in the Settings app. The wallpaper needs to be one solid color but it can be whatever color you choose.</p>
+        <p className="tracking-tight py-3">Choose a solid color background you want to use or <a href="/wallpapers" className="underline">download a wallpaper I&apos;ve created</a>. Solid wallpapers can be set directly from the Wallpapers section of the Settings app. I suggest using a darker background to minimize icon name shadows.</p>
         <p className="tracking-tight py-3">Remove all the icons from your dock, edit your home screen, and swipe left. Screenshot this empty page. It is used by the icon generating shortcut to ensure your icons match your home screen background.</p>
 
         <h1 className="text-2xl font-bold tracking-tight py-5">Generate your icons</h1>

@@ -56,7 +56,7 @@ export default function Nav() {
            <NavBarFull />
         </div>
       )} */}
-      <NavBarFull/>
+      <NavBarSmall/>
     </div>
   )
 }
@@ -73,7 +73,10 @@ export function NavBarSmall(){
           <DropdownMenuItem>Home</DropdownMenuItem>
         </Link>
         <Link href="/icons" legacyBehavior passHref>
-          <DropdownMenuItem>See the Icons</DropdownMenuItem>
+          <DropdownMenuItem>Icons</DropdownMenuItem>
+        </Link>
+        <Link href="/wallpapers" legacyBehavior passHref>
+          <DropdownMenuItem>Wallpapers</DropdownMenuItem>
         </Link>
         <Link href="/install" legacyBehavior passHref>
           <DropdownMenuItem>Install</DropdownMenuItem>
