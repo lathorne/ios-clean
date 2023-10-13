@@ -113,6 +113,7 @@ export default function Icons() {
           <img className="h-auto max-w-full rounded-lg" src="icons/whatsapp.png" alt=""/>
           <img className="h-auto max-w-full rounded-lg" src="icons/x.png" alt=""/>
           <img className="h-auto max-w-full rounded-lg" src="icons/youtube.png" alt=""/>
+          <img className="h-auto max-w-full rounded-lg" src="icons/google-bard.png" alt=""/>
         </div>
         <div className="flex flex-col items-center pt-5">
           <Button variant="outline" onClick={() => downloadFile()}>Download Icons</Button>
